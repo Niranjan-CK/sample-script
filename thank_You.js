@@ -1,5 +1,5 @@
 // Wait for the DOM to be ready
-document.addEventListener('DOMContentLoaded', function () {
+
   console.log("start")
   // Find the element with the class .order-summary__section--total-lines
   var totalLinesSection = document.querySelector('.order-summary__section--total-lines');
@@ -15,4 +15,4 @@ document.addEventListener('DOMContentLoaded', function () {
     // Append the new div under the .order-summary__section--total-lines element
     totalLinesSection.appendChild(newDiv);
   }
-});
+
