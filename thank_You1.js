@@ -8,7 +8,7 @@ const highestPriceProduct = data.line_items.reduce((maxProduct, currentItem) => 
   const maxPrice = parseFloat(maxProduct.price);
 
   return currentPrice > maxPrice ? currentItem : maxProduct;
-}, items[0]);
+}, data.line_items[0]);
 
 // Get the product ID of the product with the highest price
 const highestPriceProductId = highestPriceProduct.product_id;
