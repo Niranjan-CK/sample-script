@@ -1,7 +1,7 @@
 // Wait for the DOM to be ready
 async function fetchData() {
   try {
-    const response = await fetch('https://cdn.jsdelivr.net/gh/Niranjan-CK/sample-script/prduct.json');
+    const response = await fetch('https://cdn.jsdelivr.net/gh/Niranjan-CK/sample-script/product.json');
     const data = await response.json();
 
     console.log(data);
