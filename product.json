@@ -1,0 +1,161 @@
+product": [
+    {
+      "id": 8293637062966,
+      "title": "The Collection Snowboard: Liquid",
+      "featured_image": "https://cdn.shopify.com/s/files/1/0749/2403/2310/products/Main_b13ad453-477c-4ed1-9b43-81f3345adfd6.jpg?v=1681463539",
+      "price": 749.95,
+      "url": "javascript:void(0)",
+      "onSale": false,
+      "variant_type": "Types 1",
+      "totalVariants": 3,
+      "variants": [
+        {
+          "variant_id": 8293637062965,
+          "variant_title": "1st product Variant 1",
+          "variant_featured_image": "https://cdn.shopify.com/s/files/1/0749/2403/2310/products/Main_9129b69a-0c7b-4f66-b6cf-c4222f18028a.jpg?v=1681463540",
+          "variant_price": 8849.95,
+          "variant_url": "javascript:void(0)",
+          "variant_onSale": false
+        },
+        {
+          "variant_id": 8293637095734,
+          "variant_title": "1st product Variant 2",
+          "variant_featured_image": "https://cdn.shopify.com/s/files/1/0749/2403/2310/products/Main_c8ff0b5d-c712-429a-be00-b29bd55cbc9d.jpg?v=1681463542",
+          "variant_price": 73449.95,
+          "variant_url": "javascript:void(0)",
+          "variant_onSale": false
+        }
+      ]
+    },
+    {
+      "id": 8293637062962,
+      "title": "The Collection Snowboard: Liquid",
+      "featured_image": "https://cdn.shopify.com/s/files/1/0749/2403/2310/products/Main_b13ad453-477c-4ed1-9b43-81f3345adfd6.jpg?v=1681463539",
+      "price": 749.95,
+      "url": "javascript:void(0)",
+      "onSale": false,
+      "variant_type": "Types 1",
+      "totalVariants": 3,
+      "variants": [
+        {
+          "variant_id": 8293637062965,
+          "variant_title": "1st product Variant 1",
+          "variant_featured_image": "https://cdn.shopify.com/s/files/1/0749/2403/2310/products/Main_9129b69a-0c7b-4f66-b6cf-c4222f18028a.jpg?v=1681463540",
+          "variant_price": 8849.95,
+          "variant_url": "javascript:void(0)",
+          "variant_onSale": false
+        },
+        {
+          "variant_id": 8293637095734,
+          "variant_title": "1st product Variant 2",
+          "variant_featured_image": "https://cdn.shopify.com/s/files/1/0749/2403/2310/products/Main_c8ff0b5d-c712-429a-be00-b29bd55cbc9d.jpg?v=1681463542",
+          "variant_price": 73449.95,
+          "variant_url": "javascript:void(0)",
+          "variant_onSale": false
+        }
+      ]
+    },
+    {
+      "id": 8293637259574,
+      "title": "The Snowboard",
+      "featured_image": "https://cdn.shopify.com/s/files/1/0749/2403/2310/products/Main_c8ff0b5d-c712-429a-be00-b29bd55cbc9d.jpg?v=1681463542",
+      "price": 19.99,
+      "url": "javascript:void(0)",
+      "onSale": false,
+      "variant_type": "Types 2",
+      "totalVariants": 1,
+      "variants": []
+    },
+    {
+      "id": 8293637357878,
+      "title": "The Collection Snowboard: Liquid",
+      "featured_image": "https://cdn.shopify.com/s/files/1/0749/2403/2310/products/Main_b13ad453-477c-4ed1-9b43-81f3345adfd6.jpg?v=1681463539",
+      "price": 749.95,
+      "url": "javascript:void(0)",
+      "onSale": false,
+      "variant_type": "Types 3",
+      "totalVariants": 6,
+      "variants": [
+        {
+          "variant_id": 8293637357894,
+          "variant_title": "4th product Variant 1",
+          "variant_featured_image": "https://cdn.shopify.com/s/files/1/0749/2403/2310/products/Main_9129b69a-0c7b-4f66-b6cf-c4222f18028a.jpg?v=1681463540",
+          "variant_price": 8849.95,
+          "variant_url": "javascript:void(0)",
+          "variant_onSale": false
+        },
+        {
+          "variant_id": 8293637357910,
+          "variant_title": "4th product Variant 2",
+          "variant_featured_image": "https://cdn.shopify.com/s/files/1/0749/2403/2310/products/Main_c8ff0b5d-c712-429a-be00-b29bd55cbc9d.jpg?v=1681463542",
+          "variant_price": 73449.95,
+          "variant_url": "javascript:void(0)",
+          "variant_onSale": false
+        },
+        {
+          "variant_id": 8293637357926,
+          "variant_title": "4th product Variant 3",
+          "variant_featured_image": "https://cdn.shopify.com/s/files/1/0749/2403/2310/products/Main_b13ad453-477c-4ed1-9b43-81f3345adfd6.jpg?v=1681463539",
+          "variant_price": 73449.95,
+          "variant_url": "javascript:void(0)",
+          "variant_onSale": false
+        },
+        {
+          "variant_id": 8293637357942,
+          "variant_title": "4th product Variant 4",
+          "variant_featured_image": "https://cdn.shopify.com/s/files/1/0749/2403/2310/products/Main_9129b69a-0c7b-4f66-b6cf-c4222f18028a.jpg?v=1681463540",
+          "variant_price": 8849.95,
+          "variant_url": "javascript:void(0)",
+          "variant_onSale": false
+        },
+        {
+          "variant_id": 8293637357958,
+          "variant_title": "4th product Variant 5",
+          "variant_featured_image": "https://cdn.shopify.com/s/files/1/0749/2403/2310/products/Main_c8ff0b5d-c712-429a-be00-b29bd55cbc9d.jpg?v=1681463542",
+          "variant_price": 73449.95,
+          "variant_url": "javascript:void(0)",
+          "variant_onSale": false
+        }
+      ]
+    },
+    {
+      "id": 8293637259570,
+      "title": "The Snowboard",
+      "featured_image": "https://cdn.shopify.com/s/files/1/0749/2403/2310/products/Main_c8ff0b5d-c712-429a-be00-b29bd55cbc9d.jpg?v=1681463542",
+      "price": 19.99,
+      "url": "javascript:void(0)",
+      "onSale": false,
+      "variant_type": "Types 2",
+      "totalVariants": 1,
+      "variants": []
+    },
+    {
+      "id": 8293637423414,
+      "title": "The Collection Snowboard: Solid",
+      "featured_image": "https://cdn.shopify.com/s/files/1/0749/2403/2310/products/Main_9129b69a-0c7b-4f66-b6cf-c4222f18028a.jpg?v=1681463540",
+      "price": 749.95,
+      "url": "javascript:void(0)",
+      "onSale": false,
+      "variant_type": "Types 4",
+      "totalVariants": 3,
+      "variants": [
+        {
+          "variant_id": 8293637423430,
+          "variant_title": "5th product Variant 1",
+          "variant_featured_image": "https://cdn.shopify.com/s/files/1/0749/2403/2310/products/Main_9129b69a-0c7b-4f66-b6cf-c4222f18028a.jpg?v=1681463540",
+          "variant_price": 8849.95,
+          "variant_url": "javascript:void(0)",
+          "variant_onSale": false
+        },
+        {
+          "variant_id": 8293637423446,
+          "variant_title": "5th product Variant 2",
+          "variant_featured_image": "https://cdn.shopify.com/s/files/1/0749/2403/2310/products/Main_c8ff0b5d-c712-429a-be00-b29bd55cbc9d.jpg?v=1681463542",
+          "variant_price": 73449.95,
+          "variant_url": "javascript:void(0)",
+          "variant_onSale": false
+        }
+      ]
+    }
+  ]
+}
