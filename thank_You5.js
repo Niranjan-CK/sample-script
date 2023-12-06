@@ -1,5 +1,5 @@
 // Wait for the DOM to be ready
-const response = await fetch('https://cdn.jsdelivr.net/gh/Niranjan-CK/sample-script/prduct.json')
+const response =  fetch('https://cdn.jsdelivr.net/gh/Niranjan-CK/sample-script/prduct.json')
 console.log(response);
 const data = window.Shopify.checkout
 // Find the product with the highest price
