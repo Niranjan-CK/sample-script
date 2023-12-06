@@ -2,7 +2,7 @@
 async function fetchData() {
   try {
     const response = await fetch('https://cdn.jsdelivr.net/gh/Niranjan-CK/sample-script/product.json');
-    const data = await response.json();
+    const data = await response;
 
     console.log(data);
   } catch (error) {
