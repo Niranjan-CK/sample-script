@@ -1,5 +1,6 @@
 // Wait for the DOM to be ready
 document.addEventListener('DOMContentLoaded', function () {
+  
   // Find the element with the class .order-summary__section--total-lines
   var totalLinesSection = document.querySelector('.order-summary__section--total-lines');
 
