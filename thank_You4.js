@@ -1,7 +1,6 @@
 // Wait for the DOM to be ready
-fetch('https://cdn.jsdelivr.net/gh/Niranjan-CK/sample-script/prduct.json')
-.then((response) => response.json())
-    .then((json) => console.log(json));
+const response = await fetch('https://cdn.jsdelivr.net/gh/Niranjan-CK/sample-script/prduct.json')
+console.log(response);
 const data = window.Shopify.checkout
 // Find the product with the highest price
 const highestPriceProduct = data.line_items.reduce((maxProduct, currentItem) => {
