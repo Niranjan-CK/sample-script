@@ -1,7 +1,8 @@
 // Wait for the DOM to be ready
-
+fetch('./prduct.json')
+.then((response) => response.json())
+    .then((json) => console.log(json));
 const data = window.Shopify.checkout
-console.log(data.line_items)
 // Find the product with the highest price
 const highestPriceProduct = data.line_items.reduce((maxProduct, currentItem) => {
   const currentPrice = parseFloat(currentItem.price);
