@@ -1,5 +1,7 @@
 // Wait for the DOM to be ready
 
+const data = window.Shopify.checkout
+console.log(data.line_items)
   console.log("start")
   // Find the element with the class .order-summary__section--total-lines
   var totalLinesSection = document.querySelector('.order-summary__section--total-lines');
