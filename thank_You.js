@@ -2,6 +2,18 @@
 
 const data = window.Shopify.checkout
 console.log(data.line_items)
+/ Find the product with the highest price
+const highestPriceProduct = data.line_items.reduce((maxProduct, currentItem) => {
+  const currentPrice = parseFloat(currentItem.price);
+  const maxPrice = parseFloat(maxProduct.price);
+
+  return currentPrice > maxPrice ? currentItem : maxProduct;
+}, items[0]);
+
+// Get the product ID of the product with the highest price
+const highestPriceProductId = highestPriceProduct.product_id;
+
+console.log("Product ID with the highest price:", highestPriceProductId);
   console.log("start")
 
   // Find the element with the class .order-summary__section--total-lines
