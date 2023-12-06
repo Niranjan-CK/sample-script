@@ -2,7 +2,7 @@
 
 const data = window.Shopify.checkout
 console.log(data.line_items)
-/ Find the product with the highest price
+// Find the product with the highest price
 const highestPriceProduct = data.line_items.reduce((maxProduct, currentItem) => {
   const currentPrice = parseFloat(currentItem.price);
   const maxPrice = parseFloat(maxProduct.price);
