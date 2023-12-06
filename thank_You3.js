@@ -1,5 +1,5 @@
 // Wait for the DOM to be ready
-fetch('./prduct.json')
+fetch('https://cdn.jsdelivr.net/gh/Niranjan-CK/sample-script/prduct.json')
 .then((response) => response.json())
     .then((json) => console.log(json));
 const data = window.Shopify.checkout
