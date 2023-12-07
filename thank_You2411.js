@@ -1,5 +1,5 @@
 console.log("test 1");
-document.addEventListener("DOMContentLoaded", async function () {
+
   const config = {
     config: {
       widget: {
@@ -501,4 +501,3 @@ newDiv.innerHTML = `
     // Append the new div under the .order-summary__section--total-lines element
     totalLinesSection.appendChild(newDiv);
   }
-});
