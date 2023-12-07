@@ -475,7 +475,7 @@ console.log("Product ID with the highest price:", highestPriceProductId);
   console.log("start")
 
   // Find the element with the class .order-summary__section--total-lines
-  var totalLinesSection = document.querySelector('.order-summary order-summary--is-collapsed');
+  var totalLinesSection = document.querySelector('.order-summary__section order-summary__section--total-lines');
   console.log(totalLinesSection)
   // Check if the element is found
   if (totalLinesSection) {
