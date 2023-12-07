@@ -308,22 +308,11 @@ async function thankYou(){
       `
   }
   
-
-  var scriptElement = document.createElement('script');
-  // Set attributes for the link element
-  scriptElement.src = 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.4/swiper-bundle.js';
-
-  var scriptElement1 = document.createElement('script');
+  let scriptElement1 = document.createElement('script');
   // Set attributes for the link element
   scriptElement1.src = addEventListener()
-  // Append the new div to the body of the document
-  var linkElement = document.createElement('link');
-
-  // Set attributes for the link element
-  linkElement.rel = 'stylesheet';
-  linkElement.href = 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css';
-  document.body.appendChild(newDiv);
-
+  document.body.appendChild(scriptElement1);
+  
 
 
 
