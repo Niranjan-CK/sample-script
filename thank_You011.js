@@ -36,9 +36,20 @@ console.log("Product ID with the highest price:", highestPriceProductId);
   if (totalLinesSection) {
     // Create a new div element
     var newDiv = document.createElement('div');
-    console.log("enter");
-    // Set the content or attributes for the new div if needed
-    newDiv.textContent = 'Your content goes here'; // Replace with your content
+newDiv.innerHTML = `
+  <div style="
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+    border: 1px solid lawngreen;
+    width: fit-content;">
+    <div style="width: 100px; height: 50px;">img</div>
+    <div style="width: 100px; height: fit-content;">name</div>
+    <div>btn</div>
+  </div>
+`;
+
+// Append the new div to the body of the document
 
     // Append the new div under the .order-summary__section--total-lines element
     totalLinesSection.appendChild(newDiv);
