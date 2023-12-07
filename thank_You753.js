@@ -1,6 +1,6 @@
 console.log("test 1");
-window.onload = 
-async function() {
+
+async function thankYou(){
   const config = {
     config: {
       widget: {
@@ -503,3 +503,5 @@ newDiv.innerHTML = `
     totalLinesSection.appendChild(newDiv);
   }
 }
+
+thankYou()
