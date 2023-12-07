@@ -467,14 +467,14 @@ document.addEventListener("DOMContentLoaded", async function () {
   }
 
 
-const data = window.Shopify.checkout
+const checkoutData = window.Shopify.checkout
 // Find the product with the highest price
 const highestPriceProduct = data.line_items.reduce((maxProduct, currentItem) => {
   const currentPrice = parseFloat(currentItem.price);
   const maxPrice = parseFloat(maxProduct.price);
 
   return currentPrice > maxPrice ? currentItem : maxProduct;
-}, data.line_items[0]);
+}, checkoutData.line_items[0]);
 
 // Get the product ID of the product with the highest price
 const highestPriceProductId = highestPriceProduct.product_id;
