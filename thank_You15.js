@@ -267,13 +267,17 @@ async function thankYou(){
       
   // Create the div element with the specified HTML content
 
-  function addEventListener(){
-    return `const selectDropdowns = document.getElementsByClassName("sf-product-variants-dropdown");
-        const products = ${JSON.stringify(products.product)};
-        products.forEach((item)=>{
+  handleDropdown()
+
+  function handleDropdown(){
+    if(products){
+      const selectDropdowns = document.getElementsByClassName("sf-product-variants-dropdown");
+        const Dproducts = products.product;
+        
+        Dproducts.forEach((item)=>{
           if (item.totalVariants <= 1){
             const iframeDocument = document;
-            const product = iframeDocument.querySelector(\`[data-product-id='\${item.id}']\`);
+            const product = iframeDocument.querySelector(`[data-product-id="${item.id}"]`);
             const variant  = product?.querySelector(".sf-product-variants-dropdown");
             if(variant){
               variant.style.display = "none"
@@ -289,13 +293,13 @@ async function thankYou(){
                 const iframeDocument = document;
 
                 // Find the product element inside the iframe
-                const product = iframeDocument.querySelector(\`[data-product-id='\${productId}']\`);
+                const product = iframeDocument.querySelector(`[data-product-id='${productId}']`);
                 if (!product) return; // If product not found in iframe, return
 
                 const imgElement = product.querySelector(".sf-product-image");
                 const priceElement = product.querySelector(".sf-product-price"); 
 
-                const variant = products.find((product) => product.id === +productId)
+                const variant = products.product.find((product) => product.id === +productId)
                   .variants.find((variant) => variant.variant_id === variantId);
 
                 imgElement.src = variant.variant_featured_image;
@@ -304,14 +308,8 @@ async function thankYou(){
             }
           }
         })
-        if(products )
-      `
+    }
   }
-  
-   let scriptElement1 = document.createElement('script');
-  // Set attributes for the link element
-  scriptElement1.innerText = addEventListener()
-  document.body.appendChild(scriptElement1);
   let templateStyle = document.createElement('style');
   templateStyle.innerText = template.style
 
