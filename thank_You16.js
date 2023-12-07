@@ -279,6 +279,7 @@ async function thankYou(){
             const iframeDocument = document;
             const product = iframeDocument.querySelector(`[data-product-id="${item.id}"]`);
             const variant  = product?.querySelector(".sf-product-variants-dropdown");
+            console.log(variant,'vartyu')
             if(variant){
               variant.style.display = "none"
             }
