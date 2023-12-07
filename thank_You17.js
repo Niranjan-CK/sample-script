@@ -270,7 +270,6 @@ async function thankYou(){
   handleDropdown()
 
   function handleDropdown(){
-    if(products){
       const selectDropdowns = document.getElementsByClassName("sf-product-variants-dropdown");
         const Dproducts = products.product;
         
@@ -309,7 +308,7 @@ async function thankYou(){
             }
           }
         })
-    }
+    
   }
   let templateStyle = document.createElement('style');
   templateStyle.innerText = template.style
