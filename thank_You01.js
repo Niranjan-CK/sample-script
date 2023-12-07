@@ -1,16 +1,19 @@
 // Wait for the DOM to be ready
-async function fetchData() {
-  try {
-    const response = await fetch('https://cdn.jsdelivr.net/gh/Niranjan-CK/sample-script/product1.json');
-    const data = await response;
+ async function fetchData() {
+    try {
+      console.log('----------------------------------------------------------------');
+      const response = await fetch('https://cdn.jsdelivr.net/gh/Niranjan-CK/sample-script/product1.json');
+      const data = await response.json();
+  
+      console.log(data);
+      console.log('----------------------------------------------------------------');
 
-    console.log(data);
-  } catch (error) {
-    console.error('Error fetching data:', error);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
   }
-}
-
-fetchData();
+  
+  fetchData();
 const data = window.Shopify.checkout
 // Find the product with the highest price
 const highestPriceProduct = data.line_items.reduce((maxProduct, currentItem) => {
