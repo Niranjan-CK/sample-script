@@ -1,3 +1,4 @@
+console.log("test 1");
 document.addEventListener("DOMContentLoaded", async function () {
   const config = {
     config: {
