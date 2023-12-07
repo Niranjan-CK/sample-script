@@ -465,7 +465,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
     return null;
   }
-});
+
 
 const data = window.Shopify.checkout
 // Find the product with the highest price
@@ -500,4 +500,4 @@ newDiv.innerHTML = `
     // Append the new div under the .order-summary__section--total-lines element
     totalLinesSection.appendChild(newDiv);
   }
-
+});
