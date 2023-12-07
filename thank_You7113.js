@@ -308,13 +308,14 @@ async function thankYou(){
       `
   }
   
-  let scriptElement1 = document.createElement('script');
+   let scriptElement1 = document.createElement('script');
   // Set attributes for the link element
-  scriptElement1.src = addEventListener()
+  scriptElement1.innerText = addEventListener()
   document.body.appendChild(scriptElement1);
-  
+  let templateStyle = document.createElement('style');
+  templateStyle.innerText = template.style
 
-
+  document.head.appendChild(templateStyle)
 
   function renderTemplate(template, data) {
     const tags = {
