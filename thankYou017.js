@@ -276,6 +276,7 @@ async function thankYou(){
         Dproducts.forEach((item)=>{
           if (item.totalVariants <= 1){
             const iframeDocument = document;
+            console.log(`[data-product-id="${item.id}"]`,'product')
             const product = iframeDocument.querySelector(`[data-product-id="${item.id}"]`);
             console.log(product,'product')
             const variant  = product?.querySelector(".sf-product-variants-dropdown");
