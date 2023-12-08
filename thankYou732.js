@@ -457,7 +457,7 @@ thankYou().then(()=>{
 })
 
   async function handleDropdown(){
-    const setHeight = document.getElementsByClassName("order-summary__sections")
+    const setHeight = document.querySelector(".order-summary__sections")
     if(setHeight){
       setHeight.style.height = 'auto'
     }
