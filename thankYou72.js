@@ -164,17 +164,6 @@ async function thankYou(){
     },
   };
   // Wait for the DOM to be ready
-  async function fetchData() {
-    try {
-      const response = await fetch(
-        "https://cdn.jsdelivr.net/gh/Niranjan-CK/sample-script/product1.json"
-      );
-      const data = await response.json();
-      return data;
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  }
 
   async function fetchTemplate() {
     const response = await fetch(
@@ -449,12 +438,28 @@ newDiv.innerHTML = `
 }
 
 
+ // Wait for the DOM to be ready
+ async function fetchData() {
+  try {
+    const response = await fetch(
+      "https://cdn.jsdelivr.net/gh/Niranjan-CK/sample-script/product1.json"
+    );
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error("Error fetching data:", error);
+  }
+}
+
+
 thankYou().then(()=>{
   handleDropdown()
 })
 
-  function handleDropdown(){
+  async function handleDropdown(){
       const selectDropdowns = document.getElementsByClassName("sf-product-variants-dropdown");
+      console.log(template);
+      const products = await fetchData();
         const Dproducts = products.product;
         
         Dproducts.forEach((item)=>{
