@@ -458,7 +458,6 @@ thankYou().then(()=>{
 
   async function handleDropdown(){
       const selectDropdowns = document.getElementsByClassName("sf-product-variants-dropdown");
-      console.log(template);
       const products = await fetchData();
         const Dproducts = products.product;
         
