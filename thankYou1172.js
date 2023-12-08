@@ -266,52 +266,6 @@ async function thankYou(){
       }
       
   // Create the div element with the specified HTML content
-
-  handleDropdown(document)
-
-  function handleDropdown(document){
-      const selectDropdowns = document.getElementsByClassName("sf-product-variants-dropdown");
-        const Dproducts = products.product;
-        
-        Dproducts.forEach((item)=>{
-          if (item.totalVariants <= 1){
-            const iframeDocument = document;
-            console.log(`[data-product-id="${item.id}"]`,'product')
-            const product = iframeDocument.querySelector(`[data-product-id="${item.id}"]`);
-            console.log(product,'product')
-            const variant  = product?.querySelector(".sf-product-variants-dropdown");
-            console.log(variant,'vartyu')
-            if(variant){
-              variant.style.display = "none"
-            }
-          }
-          else{
-            for (const dropdown of selectDropdowns) {
-              dropdown.addEventListener("change", (event) => {
-                const productId = dropdown.dataset.mainProductId;
-                const variantId = +event.target.value;
-
-                // Access the document inside the iframe
-                const iframeDocument = document;
-
-                // Find the product element inside the iframe
-                const product = iframeDocument.querySelector(`[data-product-id='${productId}']`);
-                if (!product) return; // If product not found in iframe, return
-
-                const imgElement = product.querySelector(".sf-product-image");
-                const priceElement = product.querySelector(".sf-product-price"); 
-
-                const variant = products.product.find((product) => product.id === +productId)
-                  .variants.find((variant) => variant.variant_id === variantId);
-
-                imgElement.src = variant.variant_featured_image;
-                priceElement.textContent = variant.variant_price; 
-              });
-            }
-          }
-        })
-    
-  }
   let templateStyle = document.createElement('style');
   templateStyle.innerText = template.style
 
@@ -494,4 +448,51 @@ newDiv.innerHTML = `
   }
 }
 
-thankYou()
+
+thankYou().then(()=>{
+  handleDropdown()
+})
+
+  function handleDropdown(){
+      const selectDropdowns = document.getElementsByClassName("sf-product-variants-dropdown");
+        const Dproducts = products.product;
+        
+        Dproducts.forEach((item)=>{
+          if (item.totalVariants <= 1){
+            const iframeDocument = document;
+            console.log(`[data-product-id="${item.id}"]`,'product')
+            const product = iframeDocument.querySelector(`[data-product-id="${item.id}"]`);
+            console.log(product,'product')
+            const variant  = product?.querySelector(".sf-product-variants-dropdown");
+            console.log(variant,'vartyu')
+            if(variant){
+              variant.style.display = "none"
+            }
+          }
+          else{
+            for (const dropdown of selectDropdowns) {
+              dropdown.addEventListener("change", (event) => {
+                const productId = dropdown.dataset.mainProductId;
+                const variantId = +event.target.value;
+
+                // Access the document inside the iframe
+                const iframeDocument = document;
+
+                // Find the product element inside the iframe
+                const product = iframeDocument.querySelector(`[data-product-id='${productId}']`);
+                if (!product) return; // If product not found in iframe, return
+
+                const imgElement = product.querySelector(".sf-product-image");
+                const priceElement = product.querySelector(".sf-product-price"); 
+
+                const variant = products.product.find((product) => product.id === +productId)
+                  .variants.find((variant) => variant.variant_id === variantId);
+
+                imgElement.src = variant.variant_featured_image;
+                priceElement.textContent = variant.variant_price; 
+              });
+            }
+          }
+        })
+    
+  }
