@@ -277,6 +277,7 @@ async function thankYou(){
           if (item.totalVariants <= 1){
             const iframeDocument = document;
             const product = iframeDocument.querySelector(`[data-product-id="${item.id}"]`);
+            console.log(product,'product')
             const variant  = product?.querySelector(".sf-product-variants-dropdown");
             console.log(variant,'vartyu')
             if(variant){
