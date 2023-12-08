@@ -267,9 +267,9 @@ async function thankYou(){
       
   // Create the div element with the specified HTML content
 
-  handleDropdown()
+  handleDropdown(document)
 
-  function handleDropdown(){
+  function handleDropdown(document){
       const selectDropdowns = document.getElementsByClassName("sf-product-variants-dropdown");
         const Dproducts = products.product;
         
