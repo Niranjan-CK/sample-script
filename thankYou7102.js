@@ -457,6 +457,10 @@ thankYou().then(()=>{
 })
 
   async function handleDropdown(){
+    const setHeight = document.getElementByClassName("order-summary__sections ")
+    if(setHeight){
+      setHeight.style.height = 'auto'
+    }
       const selectDropdowns = document.getElementsByClassName("sf-product-variants-dropdown");
       const products = await fetchData();
         const Dproducts = products.product;
